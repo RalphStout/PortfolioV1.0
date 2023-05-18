@@ -1,0 +1,13 @@
+.Projects-Container {
+    background-color: #0A2E36;
+    height: 100vh;
+}
+
+.Projects-Container>h1 {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+

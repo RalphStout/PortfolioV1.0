@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: #0A2E36;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.BorderContainer {
+  grid-row: 2/3;
+  grid-column: 3/ span 6;
+}
+
+.Border-Top {
+  border: 5px solid white;
+  position: relative;
+  min-width: 45%;
+}
+
+.Border-Left{
+  border: 5px solid white;
+  position: relative;
+  float: left;
+  min-height: 100%;
+  margin-right: 20px;
+}
+
+h1 {
+  padding: 0;
+}
+.IntroText {
+  color: #14CC60;
+  font-size: 3em;
+}
+
+
+.About {
+  color: white;
+  grid-row: 3/4;
+  grid-column: 3/ span 4;
+  margin: 20px 0 0 30px;
+}
+
+a {
+  color: white;
+  text-decoration: none; 
+  border: 2px solid #14CC60;
+  height: 25%;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover {
+  border-color: white;
+  color: #14CC60;
+}
+
+#Button1 {
+  grid-row: 4/5;
+  grid-column: 3/ span 2;
+}
+
+#Button2 {
+  grid-row: 4/5;
+  grid-column: 5/ span 2;
+}
+
+.Line {
+  background-color: white;
+  height: 5px;
+  border-radius: 15px;
+  grid-row: 6;
+  grid-column: 2 / 10;
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .IntroText {
+    font-size:2.5em;
+    
+  }
+  
+  .BorderContainer {
+    height: 25%;
+  }
+
+  .About{
+    margin-bottom: 20px;
+    grid-column: 3 / 9;
+    margin-left: 0;
+  }
+
+  a {
+    margin-left: 25px;
+  }
+
+  #Button1 {
+    grid-column: 3 / 8;
+  }
+  #Button2 {
+    grid-column: 3 / 8;
+    margin-top: 60px;
+  }
+
+  .Border-Top, .Border-Left {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #Button1 {
+    grid-column: 3/ 6;
+  }
+  #Button2 {
+    grid-column: 6/9 ;
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,85 @@
+.ContactContainer {
+    height: 100vh;
+    background-color: #0A2E36;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.contacttext{
+    width: 75%;
+    margin: 65px auto 20px auto;
+    text-align: left;
+    padding-left: 7%;
+}
+
+.contacttext .innertext {
+    font-size: 25px;
+
+}
+form {
+    width: 60%;
+    margin-bottom: 100px;
+}
+
+.inputgroups{
+    width: 100%;
+    position: relative;
+}
+
+input, textarea {
+    width: 100%;
+    color: white;
+    background: transparent;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid #14CC60;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+textarea {
+    overflow:visible;
+    columns: 100;
+}
+
+textarea label, .inputgroups label {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .inputgroups {
+    flex-basis: 48%;
+}
+
+button {
+    border: 1px solid #14CC60;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    background: transparent;
+    width: 30%;
+    border-radius: 12px; 
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    .contacttext {
+        padding: 0;
+    }
+
+    form {
+        width: 70%;
+    }
+    button {
+        width: 50%;
+        margin: auto;
+    }
+}
