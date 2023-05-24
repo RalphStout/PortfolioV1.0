@@ -75,3 +75,15 @@ img {
     transform: translateY(0);
 
 }
+
+@media only screen and (max-width: 600px){
+    .cardcontainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cards {
+        width: 60%;
+    }
+
+}
