@@ -86,4 +86,7 @@ img {
         width: 60%;
     }
 
+    .cards:hover {
+        height: 150%;
+    }
 }
